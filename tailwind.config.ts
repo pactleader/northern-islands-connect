@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Northern Islands custom colors
+				ocean: {
+					light: '#D3E4FD',
+					DEFAULT: '#0EA5E9',
+					dark: '#075985',
+				},
+				island: {
+					light: '#F2FCE2',
+					DEFAULT: '#65a30d',
+					dark: '#3f6212',
+				},
+				sand: {
+					light: '#FEF7CD',
+					DEFAULT: '#eab308',
+					dark: '#854d0e',
+				},
+				coral: {
+					light: '#FFDEE2',
+					DEFAULT: '#f43f5e',
+					dark: '#9f1239',
 				}
 			},
 			borderRadius: {
@@ -84,11 +106,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'wave': {
+					'0%': { transform: 'translateX(0)' },
+					'50%': { transform: 'translateX(-10px)' },
+					'100%': { transform: 'translateX(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'wave': 'wave 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/images/hero-background.jpg')",
 			}
 		}
 	},
