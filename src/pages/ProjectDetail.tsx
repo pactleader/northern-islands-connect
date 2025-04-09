@@ -33,7 +33,7 @@ const ProjectDetail = () => {
         'Invasive species removal programs on Pagan and Alamagan',
         'Marine ecosystem monitoring around all nine islands',
         'Development of conservation area management plans',
-        'Educational programs about the Northern Islands' ecosystems'
+        'Educational programs about the Northern Islands\' ecosystems'
       ],
       achievements: [
         'Completed comprehensive species inventories for Pagan, Agrihan, and Alamagan',
@@ -110,7 +110,7 @@ const ProjectDetail = () => {
       achievements: [
         'Recorded 45 hours of oral histories from 18 elders',
         'Completed archaeological surveys of Pagan and Agrihan',
-        'Published bilingual children's book about Northern Islands legends',
+        'Published bilingual children\'s book about Northern Islands legends',
         'Created digital archive of historical photographs and documents',
         'Hosted annual Northern Islands Cultural Festival for three consecutive years'
       ],

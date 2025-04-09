@@ -13,7 +13,7 @@ const Staff = () => {
       image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027', // Replace with actual photo
       email: 'mayor@northernislands.gov.mp',
       phone: '(670) 555-1234',
-      bio: 'Mayor Santos has been serving as the Northern Islands Mayor since 2020. Born to a family with roots in Pagan, he is dedicated to preserving the islands' heritage while creating sustainable development opportunities for current and future generations.'
+      bio: 'Mayor Santos has been serving as the Northern Islands Mayor since 2020. Born to a family with roots in Pagan, he is dedicated to preserving the islands\' heritage while creating sustainable development opportunities for current and future generations.'
     },
     {
       name: 'Maria Mafnas',
@@ -21,7 +21,7 @@ const Staff = () => {
       image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21', // Replace with actual photo
       email: 'chiefofstaff@northernislands.gov.mp',
       phone: '(670) 555-1235',
-      bio: 'Maria oversees the daily operations of the Mayor's Office and coordinates with various government agencies and community partners. Her family originally comes from Agrihan, and she is passionate about creating opportunities for Northern Islands residents.'
+      bio: 'Maria oversees the daily operations of the Mayor\'s Office and coordinates with various government agencies and community partners. Her family originally comes from Agrihan, and she is passionate about creating opportunities for Northern Islands residents.'
     },
     {
       name: 'Thomas Camacho',
@@ -29,7 +29,7 @@ const Staff = () => {
       image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb', // Replace with actual photo
       email: 'environment@northernislands.gov.mp',
       phone: '(670) 555-1236',
-      bio: 'With a background in environmental science, Thomas leads conservation initiatives for the Northern Islands. He works closely with federal and local agencies to protect the islands' unique ecosystems while balancing the needs of potential resettlement.'
+      bio: 'With a background in environmental science, Thomas leads conservation initiatives for the Northern Islands. He works closely with federal and local agencies to protect the islands\' unique ecosystems while balancing the needs of potential resettlement.'
     },
     {
       name: 'Ana Sablan',
@@ -53,7 +53,7 @@ const Staff = () => {
       image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027', // Replace with actual photo
       email: 'admin@northernislands.gov.mp',
       phone: '(670) 555-1239',
-      bio: 'Elena manages administrative operations for the Mayor's Office, including budgeting, procurement, and human resources. She ensures the office runs efficiently while maintaining compliance with government regulations.'
+      bio: 'Elena manages administrative operations for the Mayor\'s Office, including budgeting, procurement, and human resources. She ensures the office runs efficiently while maintaining compliance with government regulations.'
     }
   ];
 
@@ -64,7 +64,7 @@ const Staff = () => {
         background="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
       >
         <p>
-          Meet the dedicated team at the Northern Islands Mayor's Office who work every day
+          Meet the dedicated team at the Northern Islands Mayor\'s Office who work every day
           to serve our communities and preserve our islands.
         </p>
       </PageHeader>
@@ -107,7 +107,7 @@ const Staff = () => {
           <div className="bg-white rounded-lg shadow-md p-8">
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Work With Us</h2>
             <p className="mb-4 text-gray-700">
-              The Northern Islands Mayor's Office is committed to serving our communities and preserving our islands 
+              The Northern Islands Mayor\'s Office is committed to serving our communities and preserving our islands 
               for future generations. We occasionally have employment and volunteer opportunities for dedicated 
               individuals who share our vision.
             </p>
