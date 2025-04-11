@@ -22,11 +22,11 @@ const OurMayor = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-1">
               <div className="sticky top-24">
-                <div className="rounded-lg overflow-hidden mb-6 max-w-[500px] mx-auto">
+                <div className="rounded-lg overflow-hidden mb-6 max-w-[500px] max-h-[500px] mx-auto">
                   <img 
-                    src="https://images.unsplash.com/photo-1472396961693-142e6e269027"
+                    src="https://images.unsplash.com/photo-1498936178812-4b2e558d2937"
                     alt="Mayor Valentino N. Taisacan Jr."
-                    className="w-full h-auto"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
                 
