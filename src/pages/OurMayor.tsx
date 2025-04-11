@@ -24,7 +24,7 @@ const OurMayor = () => {
               <div className="sticky top-24">
                 <div className="rounded-lg overflow-hidden mb-6 max-w-[500px] max-h-[500px] mx-auto">
                   <img 
-                    src="https://images.unsplash.com/photo-1498936178812-4b2e558d2937"
+                    src="https://bloximages.newyork1.vip.townnews.com/mvariety.com/content/tncms/assets/v3/editorial/8/19/819c8561-f916-45eb-81c6-35cfa42a1672/67eba081b5338.image.png"
                     alt="Mayor Valentino N. Taisacan Jr."
                     className="w-full h-auto object-cover"
                   />
