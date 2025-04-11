@@ -54,7 +54,7 @@ const Index = () => {
     },
     {
       title: 'Register for Northern Islands Trip',
-      icon: 'M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1zM4 7h8M4 10h8M4 13h8',
+      icon: 'M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z',
       link: '/contact'
     },
     {
@@ -79,6 +79,10 @@ const Index = () => {
     }
   ];
 
+  const scrollToResources = () => {
+    document.getElementById('resources-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -97,8 +101,12 @@ const Index = () => {
             Preserving our heritage and building our future in the Northern Islands of the CNMI
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg" className="bg-[#0066B3] hover:bg-[#0052A2] text-white">
-              <Link to="/citizen-resources">Citizen Resources</Link>
+            <Button 
+              size="lg" 
+              className="bg-[#0066B3] hover:bg-[#0052A2] text-white"
+              onClick={scrollToResources}
+            >
+              Citizen Resources
             </Button>
             <Button asChild size="lg" className="bg-ocean-dark hover:bg-ocean text-white">
               <Link to="/islands">Explore Our Islands</Link>
@@ -111,7 +119,7 @@ const Index = () => {
       </section>
 
       {/* Resources Section (formerly Mission Section) */}
-      <section className="py-16 bg-ocean-light/30">
+      <section id="resources-section" className="py-16 bg-ocean-light/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900">Resources</h2>
