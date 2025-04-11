@@ -63,16 +63,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Northern Islands custom colors
+				// Northern Islands custom colors - Updated to match CNMI flag
 				ocean: {
 					light: '#D3E4FD',
-					DEFAULT: '#0EA5E9',
-					dark: '#075985',
+					DEFAULT: '#0066B3', // CNMI flag blue
+					dark: '#004C93',
 				},
 				island: {
-					light: '#F2FCE2',
-					DEFAULT: '#65a30d',
-					dark: '#3f6212',
+					light: '#E8F7D4',
+					DEFAULT: '#008A3C', // CNMI flag green
+					dark: '#00662C',
 				},
 				sand: {
 					light: '#FEF7CD',
@@ -81,8 +81,8 @@ export default {
 				},
 				coral: {
 					light: '#FFDEE2',
-					DEFAULT: '#f43f5e',
-					dark: '#9f1239',
+					DEFAULT: '#E11B22', // CNMI flag red
+					dark: '#B01219',
 				}
 			},
 			borderRadius: {

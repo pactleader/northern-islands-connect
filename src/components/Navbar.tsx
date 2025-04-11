@@ -16,7 +16,9 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Islands', path: '/islands' },
     { name: 'Projects', path: '/projects' },
+    { name: 'Our Mayor', path: '/our-mayor' },
     { name: 'Staff', path: '/staff' },
+    { name: 'Reports', path: '/reports' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -27,8 +29,8 @@ const Navbar = () => {
           <div className="flex justify-between w-full">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center">
-                <span className="text-ocean-dark font-bold text-xl md:text-2xl">Northern Islands</span>
-                <span className="text-island-dark font-bold text-xl md:text-2xl ml-1">Mayor's Office</span>
+                <span className="text-[#0066B3] font-bold text-xl md:text-2xl">Northern Islands</span>
+                <span className="text-[#008A3C] font-bold text-xl md:text-2xl ml-1">Mayor's Office</span>
               </Link>
             </div>
             
@@ -38,7 +40,7 @@ const Navbar = () => {
                 <Link 
                   key={link.name}
                   to={link.path}
-                  className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-ocean-dark hover:bg-gray-50 rounded-md transition-colors"
+                  className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#0066B3] hover:bg-gray-50 rounded-md transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -66,7 +68,7 @@ const Navbar = () => {
             <Link
               key={link.name}
               to={link.path}
-              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-ocean-dark hover:bg-gray-50 rounded-md"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#0066B3] hover:bg-gray-50 rounded-md"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
