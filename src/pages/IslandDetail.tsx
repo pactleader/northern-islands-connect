@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Layout from '../components/Layout';
@@ -82,6 +81,91 @@ const IslandDetail = () => {
         'Dynamic volcanic landscapes'
       ]
     },
+    'farallon-de-pajaros': {
+      name: 'Farallon de Pajaros',
+      image: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff',
+      location: '20°33′N 144°54′E',
+      area: '2.6 sq km',
+      population: 'Uninhabited',
+      highestPoint: 'Farallon de Pajaros (360 m)',
+      description: 'Farallon de Pajaros, also known as Uracas, is the northernmost island of the CNMI. This small volcanic island is known for its active volcano and rich bird population, particularly seabirds that nest on its cliffs.',
+      history: 'The island has never been permanently inhabited due to its small size and active volcanic nature. It was first documented by European explorers in the 16th century and has since been recognized for its ecological importance as a bird sanctuary.',
+      nature: 'The island is dominated by its active volcano and steep cliffs that provide ideal nesting sites for seabirds. The surrounding waters are rich in marine life, and the island\'s isolation has helped preserve its natural ecosystems.',
+      landmarks: [
+        'Active volcano crater',
+        'Seabird nesting colonies',
+        'Steep coastal cliffs',
+        'Marine protected area'
+      ]
+    },
+    'guguan': {
+      name: 'Guguan',
+      image: 'https://images.unsplash.com/photo-1542259009477-d6258e8c8e2d',
+      location: '17°18′N 145°50′E',
+      area: '3.9 sq km',
+      population: 'Uninhabited',
+      highestPoint: 'Mount Guguan (287 m)',
+      description: 'Guguan is a small volcanic island known for its pristine beaches and clear waters. The island is uninhabited and serves as an important wildlife conservation area, particularly for seabirds and marine life.',
+      history: 'Guguan has archaeological evidence of early Chamorro presence but has not been permanently inhabited in modern times. The island was recognized for its ecological importance and designated as a wildlife sanctuary to protect its unique ecosystems.',
+      nature: 'The island features diverse vegetation, from coastal strand to forested slopes. Its isolation and protected status have helped maintain healthy populations of seabirds and marine life in the surrounding waters.',
+      landmarks: [
+        'Mount Guguan',
+        'Pristine beaches',
+        'Seabird nesting sites',
+        'Coral reef ecosystems'
+      ]
+    },
+    'maug': {
+      name: 'Maug',
+      image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
+      location: '20°02′N 145°13′E',
+      area: '2.1 sq km',
+      population: 'Uninhabited',
+      highestPoint: 'North Island (227 m)',
+      description: 'Maug consists of three small islands that form the rim of a submerged volcano crater. The islands are known for their unique geological formation and rich marine life in the central lagoon.',
+      history: 'Maug has never been permanently inhabited due to its small size and lack of freshwater sources. The island was first documented by European explorers and has since been recognized for its geological significance and marine biodiversity.',
+      nature: 'The three islands of Maug form a natural harbor that protects a rich marine ecosystem. The central lagoon is home to diverse coral reefs and marine life, while the islands themselves support various seabird species.',
+      landmarks: [
+        'Three islands forming a volcanic rim',
+        'Central lagoon with marine life',
+        'Seabird nesting colonies',
+        'Underwater volcanic features'
+      ]
+    },
+    'sarigan': {
+      name: 'Sarigan',
+      image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206',
+      location: '16°42′N 145°47′E',
+      area: '4.9 sq km',
+      population: 'Uninhabited',
+      highestPoint: 'Mount Sarigan (538 m)',
+      description: 'Sarigan is a wildlife sanctuary known for its lush forests and successful conservation efforts. The island has recovered from past environmental impacts and now supports diverse plant and animal species.',
+      history: 'Sarigan has evidence of early Chamorro presence but was not continuously inhabited. The island was impacted by introduced species and human activities but has seen significant recovery through conservation efforts.',
+      nature: 'The island features dense forests and diverse vegetation. Conservation efforts have helped restore native species and control invasive plants and animals, making Sarigan a success story in island ecosystem restoration.',
+      landmarks: [
+        'Mount Sarigan',
+        'Restored native forests',
+        'Seabird nesting sites',
+        'Marine protected area'
+      ]
+    },
+    'asuncion': {
+      name: 'Asuncion',
+      image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba',
+      location: '19°41′N 145°24′E',
+      area: '7.4 sq km',
+      population: 'Uninhabited',
+      highestPoint: 'Mount Asuncion (857 m)',
+      description: 'Asuncion is a remote volcanic island with steep slopes and important seabird nesting sites. The island\'s dramatic landscape and isolation have helped preserve its natural ecosystems.',
+      history: 'Asuncion has never been permanently inhabited due to its remote location and challenging terrain. The island was first documented by European explorers and has since been recognized for its ecological importance.',
+      nature: 'The island features steep volcanic slopes and diverse vegetation. Its isolation and protected status have helped maintain healthy populations of seabirds and preserve its natural ecosystems.',
+      landmarks: [
+        'Mount Asuncion',
+        'Steep volcanic slopes',
+        'Seabird nesting colonies',
+        'Marine protected area'
+      ]
+    }
     // Additional islands would be added here
   };
 

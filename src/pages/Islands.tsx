@@ -1,4 +1,3 @@
-
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import Card from '../components/Card';
@@ -38,7 +37,7 @@ const Islands = () => {
     },
     {
       name: 'Maug',
-      image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb',
+      image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
       description: 'A group of three small islands forming the rim of a submerged volcano crater, rich in marine life.',
       path: '/islands/maug'
     },
