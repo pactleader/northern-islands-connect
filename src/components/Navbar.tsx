@@ -1,12 +1,23 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import logoImage from '../../public/images/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
   const [imgError, setImgError] = useState(false);
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsOpen(false);
+    // Smooth scroll to top when route changes
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, [location]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
