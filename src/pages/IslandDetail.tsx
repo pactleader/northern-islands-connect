@@ -100,7 +100,7 @@ const IslandDetail = () => {
     },
     'guguan': {
       name: 'Guguan',
-      image: 'https://images.unsplash.com/photo-1542259009477-d6258e8c8e2d',
+      image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb',
       location: '17°18′N 145°50′E',
       area: '3.9 sq km',
       population: 'Uninhabited',
