@@ -31,7 +31,7 @@ const Islands = () => {
     },
     {
       name: 'Guguan',
-      image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb',
+      image: 'https://images.unsplash.com/photo-1542259009477-d6258e8c8e2d',
       description: 'An uninhabited wildlife conservation area with pristine beaches and clear waters.',
       path: '/islands/guguan'
     },
