@@ -55,7 +55,7 @@ const Islands = () => {
     },
     {
       name: 'Asuncion',
-      image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21',
+      image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba',
       description: 'A remote island with steep volcanic slopes and important seabird nesting sites.',
       path: '/islands/asuncion'
     }
