@@ -36,9 +36,8 @@ const Index = () => {
 
   // Hero images
   const heroImages = [
-    '/images/northern-islands-4.jpg',  // Community activity
-    '/images/northern-islands-2.jpg',  // Cultural scene
     '/images/northern-islands-3.jpg',  // Natural landscape
+    '/images/northern-islands-2.jpg',  // Cultural scene
     '/images/northern-islands-1.jpg'   // Beautiful beach scene
   ];
 

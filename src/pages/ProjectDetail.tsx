@@ -1,4 +1,3 @@
-
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Layout from '../components/Layout';
@@ -121,7 +120,114 @@ const ProjectDetail = () => {
         'Intergenerational knowledge sharing retreat (December 2025)'
       ]
     },
-    // Additional projects would be added here
+    'tourism': {
+      title: 'Sustainable Tourism Development',
+      image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb',
+      status: 'Planning Phase',
+      timeline: '2024 - 2027',
+      partners: 'CNMI Tourism Office, Northern Islands Tourism Association, Local Community Leaders',
+      coordinator: 'David Chen, Tourism Development Manager',
+      description: 'The Sustainable Tourism Development project aims to create responsible tourism opportunities that showcase the islands\' natural beauty while ensuring minimal environmental impact and maximum benefit to local communities. This initiative focuses on developing eco-friendly tourism infrastructure and experiences that preserve the islands\' unique character.',
+      goals: [
+        'Develop sustainable tourism guidelines for the Northern Islands',
+        'Create eco-friendly visitor facilities and infrastructure',
+        'Train local guides and tourism service providers',
+        'Establish visitor carrying capacity limits for each island',
+        'Promote cultural tourism experiences led by community members'
+      ],
+      activities: [
+        'Development of sustainable tourism master plan',
+        'Community consultation workshops on tourism development',
+        'Training programs for local guides and service providers',
+        'Environmental impact assessments for proposed facilities',
+        'Creation of visitor information and education materials'
+      ],
+      achievements: [
+        'Completed initial tourism feasibility studies for three islands',
+        'Established Northern Islands Tourism Advisory Committee',
+        'Developed draft sustainable tourism guidelines',
+        'Created training curriculum for local guides',
+        'Published preliminary visitor information materials'
+      ],
+      upcoming: [
+        'Public consultation on tourism master plan (June 2025)',
+        'Pilot guide training program (August 2025)',
+        'Launch of visitor information website (October 2025)',
+        'First sustainable tourism workshop series (January 2026)'
+      ]
+    },
+    'emergency': {
+      title: 'Emergency Management & Disaster Preparedness',
+      image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9',
+      status: 'Active',
+      timeline: '2023 - Ongoing',
+      partners: 'CNMI Emergency Management Office, FEMA, Red Cross, Local Emergency Response Teams',
+      coordinator: 'James Wilson, Emergency Management Director',
+      description: 'The Emergency Management & Disaster Preparedness project focuses on building resilience through comprehensive emergency response planning, disaster preparedness, and climate change adaptation strategies for the Northern Islands. This initiative ensures communities are prepared for various natural and man-made emergencies.',
+      goals: [
+        'Develop comprehensive emergency response plans for each island',
+        'Establish early warning systems for natural disasters',
+        'Create evacuation protocols and safe zones',
+        'Train community emergency response teams',
+        'Implement climate change adaptation measures'
+      ],
+      activities: [
+        'Regular emergency response drills and exercises',
+        'Community preparedness workshops and training',
+        'Development of emergency communication systems',
+        'Creation of evacuation routes and shelter plans',
+        'Climate change vulnerability assessments'
+      ],
+      achievements: [
+        'Completed emergency response plans for all nine islands',
+        'Established community emergency response teams on three islands',
+        'Implemented early warning system for volcanic activity',
+        'Created emergency communication protocols',
+        'Conducted first island-wide emergency drill'
+      ],
+      upcoming: [
+        'Community emergency preparedness workshop (May 2025)',
+        'Evacuation route mapping project (July 2025)',
+        'Emergency response team training (September 2025)',
+        'Climate change adaptation planning workshop (November 2025)'
+      ]
+    },
+    'transportation': {
+      title: 'Maritime Transportation Improvement',
+      image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21',
+      status: 'Active',
+      timeline: '2024 - 2028',
+      partners: 'CNMI Ports Authority, Maritime Administration, Local Shipping Companies',
+      coordinator: 'Sarah Martinez, Transportation Planning Manager',
+      description: 'The Maritime Transportation Improvement project aims to enhance transportation infrastructure and services to improve accessibility to the Northern Islands for residents, visitors, and essential services. This initiative focuses on developing reliable and safe maritime transportation options while considering environmental impacts.',
+      goals: [
+        'Establish regular maritime transportation routes',
+        'Improve port facilities and safety measures',
+        'Develop emergency transportation protocols',
+        'Create sustainable shipping guidelines',
+        'Implement vessel tracking and monitoring systems'
+      ],
+      activities: [
+        'Port facility assessments and improvements',
+        'Maritime route planning and optimization',
+        'Safety protocol development and training',
+        'Environmental impact monitoring',
+        'Community transportation needs assessment'
+      ],
+      achievements: [
+        'Completed port facility assessments on three islands',
+        'Established initial maritime transportation schedule',
+        'Implemented vessel tracking system',
+        'Developed safety protocols for maritime transport',
+        'Created emergency transportation response plan'
+      ],
+      upcoming: [
+        'Port facility improvement project (June 2025)',
+        'Maritime safety training program (August 2025)',
+        'New transportation route launch (October 2025)',
+        'Emergency transport drill (December 2025)'
+      ]
+    }
   };
 
   // Get the current project data or redirect if not found
