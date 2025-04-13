@@ -1,4 +1,3 @@
-
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
 import { FileText, Download } from 'lucide-react';
@@ -25,14 +24,14 @@ const Reports = () => {
     {
       year: '2021',
       title: 'Citizen Centric Report 2021',
-      image: 'https://images.unsplash.com/photo-1586282391129-76a2d92c3a3d',
+      image: 'https://images.unsplash.com/photo-1506953823976-52e1fdc0149a',
       description: 'Annual report summarizing the Northern Islands Mayor\'s Office activities, achievements, and financial information for fiscal year 2021.',
       downloadUrl: '#'
     },
     {
       year: '2020',
       title: 'Citizen Centric Report 2020',
-      image: 'https://images.unsplash.com/photo-1566207474742-de9244cc5b98',
+      image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
       description: 'Annual report summarizing the Northern Islands Mayor\'s Office activities, achievements, and financial information for fiscal year 2020.',
       downloadUrl: '#'
     }

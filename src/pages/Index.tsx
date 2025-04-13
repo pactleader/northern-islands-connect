@@ -1,10 +1,19 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { Button } from '@/components/ui/button';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { useEffect, useState } from 'react';
 
 const Index = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const scrollToResources = () => {
     const resourcesSection = document.getElementById('resources-section');
     if (resourcesSection) {
@@ -12,14 +21,51 @@ const Index = () => {
     }
   };
 
+  // Slider settings
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    fade: true,
+    arrows: false,
+  };
+
+  // Hero images
+  const heroImages = [
+    '/images/northern-islands-4.jpg',  // Community activity
+    '/images/northern-islands-2.jpg',  // Cultural scene
+    '/images/northern-islands-3.jpg',  // Natural landscape
+    '/images/northern-islands-1.jpg'   // Beautiful beach scene
+  ];
+
   return (
     <Layout>
-      {/* Hero section */}
-      <section className="hero-section relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-ocean-dark/70 to-ocean-dark/90" 
-        style={{
-          backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/images/hero-background.jpg')"
-        }}>
-        <div className="container mx-auto px-4 py-16 text-center">
+      {/* Hero section with slider */}
+      <section className="hero-section relative min-h-[60vh] flex items-center justify-center">
+        {isClient && (
+          <div className="absolute inset-0 z-0">
+            <Slider {...sliderSettings}>
+              {heroImages.map((image, index) => (
+                <div key={index} className="relative h-[60vh]">
+                  <div 
+                    className="absolute inset-0 bg-gradient-to-b from-ocean-dark/70 to-ocean-dark/90 z-10"
+                    style={{
+                      backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('${image}')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                    }}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+        )}
+        
+        <div className="container mx-auto px-4 py-16 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Northern Islands Mayor's Office
           </h1>
@@ -35,7 +81,7 @@ const Index = () => {
             </Button>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0">
+        <div className="absolute bottom-0 left-0 right-0 z-10">
           <div className="wave-animation h-20"></div>
         </div>
       </section>
@@ -125,8 +171,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Ready to Experience Section - Updated with red background (#E11B22) and consistent button styles */}
-      <section className="py-16 md:py-20 bg-[#E11B22] text-white">
+      {/* Ready to Experience Section - Updated with new background color */}
+      <section className="py-16 md:py-20 bg-[hsl(198.99deg,89.34%,47.84%)] text-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to experience the Northern Islands?</h2>
@@ -135,10 +181,10 @@ const Index = () => {
               we're here to assist you.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button asChild size="lg" className="font-medium bg-white text-[#E11B22] hover:bg-gray-100">
+              <Button asChild size="lg" className="font-medium bg-white text-[hsl(198.99deg,89.34%,47.84%)] hover:bg-gray-100">
                 <Link to="/islands">Explore Islands</Link>
               </Button>
-              <Button asChild size="lg" className="font-medium bg-white text-[#E11B22] hover:bg-gray-100">
+              <Button asChild size="lg" className="font-medium bg-white text-[hsl(198.99deg,89.34%,47.84%)] hover:bg-gray-100">
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
@@ -152,41 +198,53 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Latest Updates</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <img src="https://images.unsplash.com/photo-1583132648360-6a93d6fc5005" alt="Island fishing project" className="w-full h-48 object-cover" />
+              <img 
+                className="w-full h-48 object-cover" 
+                src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                alt="Island fishing project" 
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Sustainable Fishing Project Launched</h3>
                 <p className="text-gray-600 mb-4">New initiative aims to support traditional fishing methods while ensuring sustainable practices.</p>
                 <div className="flex items-center">
                   <span className="text-sm text-gray-500">April 2, 2025</span>
-                  <Button asChild variant="link" className="ml-auto">
-                    <Link to="/news/fishing-project">Read More <ArrowRight className="ml-1 h-4 w-4" /></Link>
-                  </Button>
+                  <Link to="/news/fishing-project" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 ml-auto">
+                    Read More <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <img src="https://images.unsplash.com/photo-1549159064-3d2ab3d9774c" alt="Solar panel installation" className="w-full h-48 object-cover" />
+              <img 
+                className="w-full h-48 object-cover" 
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                alt="Solar panel installation" 
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Solar Energy Coming to Pagan</h3>
                 <p className="text-gray-600 mb-4">Renewable energy project set to bring sustainable power to future resettlement areas.</p>
                 <div className="flex items-center">
                   <span className="text-sm text-gray-500">March 25, 2025</span>
-                  <Button asChild variant="link" className="ml-auto">
-                    <Link to="/news/solar-energy">Read More <ArrowRight className="ml-1 h-4 w-4" /></Link>
-                  </Button>
+                  <Link to="/news/solar-energy" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 ml-auto">
+                    Read More <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-              <img src="https://images.unsplash.com/photo-1566255319360-28ebce9375d7" alt="Cultural preservation workshop" className="w-full h-48 object-cover" />
+              <img 
+                className="w-full h-48 object-cover" 
+                src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                alt="Cultural preservation workshop" 
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Cultural Heritage Preservation Workshop</h3>
                 <p className="text-gray-600 mb-4">Community members gathered to share and document traditional knowledge and practices.</p>
                 <div className="flex items-center">
                   <span className="text-sm text-gray-500">March 18, 2025</span>
-                  <Button asChild variant="link" className="ml-auto">
-                    <Link to="/news/cultural-workshop">Read More <ArrowRight className="ml-1 h-4 w-4" /></Link>
-                  </Button>
+                  <Link to="/news/cultural-workshop" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 text-primary underline-offset-4 hover:underline h-10 px-4 py-2 ml-auto">
+                    Read More <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
                 </div>
               </div>
             </div>

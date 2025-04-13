@@ -1,11 +1,12 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logoImage from '../../public/images/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -29,8 +30,19 @@ const Navbar = () => {
           <div className="flex justify-between w-full">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center">
-                <span className="text-[#0066B3] font-bold text-xl md:text-2xl">Northern Islands</span>
-                <span className="text-[#008A3C] font-bold text-xl md:text-2xl ml-1">Mayor's Office</span>
+                {!imgError ? (
+                  <img 
+                    src={logoImage}
+                    alt="Northern Islands Mayor's Office Logo" 
+                    className="h-12 w-auto"
+                    onError={() => setImgError(true)}
+                  />
+                ) : (
+                  <div className="flex items-center">
+                    <span className="text-[#0066B3] font-bold text-xl md:text-2xl">Northern Islands</span>
+                    <span className="text-[#008A3C] font-bold text-xl md:text-2xl ml-1">Mayor's Office</span>
+                  </div>
+                )}
               </Link>
             </div>
             
