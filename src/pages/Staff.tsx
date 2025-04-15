@@ -6,9 +6,9 @@ const Staff = () => {
 
   // Separate the mayor from the rest of the team
   const mayor = {
-    name: "Ramon \"RB\" Jose Blas Camacho",
-    title: "Mayor",
-    image: "/images/mayor-camacho.webp"
+    name: "Valentino N. Taisacan Jr.",
+    title: "Mayor of the Northern Islands",
+    image: "https://bloximages.newyork1.vip.townnews.com/mvariety.com/content/tncms/assets/v3/editorial/8/19/819c8561-f916-45eb-81c6-35cfa42a1672/67eba081b5338.image.png"
   };
 
   const managementTeam = [
@@ -74,7 +74,7 @@ const Staff = () => {
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">Management Team</h1>
         <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
-          The Saipan Mayor's Office management maintains a resilient stance by collaboratively upholding the Saipan Mayor's mission of fostering a Safe Community, Safe Village, and A Clean Island.
+          The Northern Islands Mayor's Office management maintains a resilient stance by collaboratively upholding the mission of fostering sustainable development and preserving the unique cultural heritage of the Northern Islands.
         </p>
         
         {/* Mayor section - single row */}
